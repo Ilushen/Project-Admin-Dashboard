@@ -9,15 +9,21 @@
     display: grid;
     grid-template-columns: 1fr;
     /*grid-template-rows: 100px 500px 200px 600px;*/
-    grid-template-rows: 80px 4fr 2fr 6fr;
-    align-items: center;
-    justify-content: center;
+    grid-template-rows: 90px 4fr 4fr 6fr;
+    align-items: flex-start;
+    justify-items: left;
     font-size: 20px;
-    padding: 20px;
+    padding: 15px;
 }
 
 .header {
     grid-area: 1/2/2/3;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: flex-start;
+    padding: 20px;
+    
 }
 
 .main-content {
@@ -67,9 +73,28 @@ ul {
     width: 30px;
 }
 
-.sidecontent {
-    background-color: red;
+
+.ring, .smalcat{
+    width: 40px;
 }
-.rings{
-    height: 10px;
+
+.largecat{
+    width: 60px;
+}
+
+.search input{
+    width: 700px;
+    border-radius: 10px;
+    height: 25px;
+  
+}
+
+.search{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+.dash{
+    align-self: left;
+    justify-self: left;
 }
