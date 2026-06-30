@@ -10,8 +10,6 @@
     grid-template-columns: 1fr;
     /*grid-template-rows: 100px 500px 200px 600px;*/
     grid-template-rows: 90px 4fr 4fr 6fr;
-    align-items: flex-start;
-    justify-items: left;
     font-size: 20px;
     padding: 15px;
 }
@@ -21,7 +19,6 @@
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: repeat(2,1fr);
-    align-items: flex-start;
     padding: 20px;
     
 }
@@ -46,16 +43,14 @@ ul {
 .DashLogo {
     display: grid;
     grid-template-columns: 80px 1fr;
-    align-items: center;
     justify-items: left;
-    justify-content: flex-start;
+
 }
 
 .navagation {
     display: grid;
     grid-template-columns: 60px 1fr;
     grid-template-rows: repeat(6, 60px);
-    align-items: center;
     justify-items: left;
 
 }
@@ -64,7 +59,6 @@ ul {
     display: grid;
     grid-template-columns: 60px 1fr;
     grid-template-rows: repeat(3, 60px);
-    align-items: center;
     justify-items: left;
 
 }
@@ -94,7 +88,3 @@ ul {
     grid-template-columns: 50px 1fr;
 }
 
-.dash{
-    align-self: left;
-    justify-self: left;
-}
