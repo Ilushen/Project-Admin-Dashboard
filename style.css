@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr;
     /*grid-template-rows: 100px 500px 200px 600px;*/
-    grid-template-rows: 90px 4fr 4fr 6fr;
+    grid-template-rows: 120px 4fr 6fr 6fr;
     font-size: 20px;
     padding: 15px;
 }
@@ -17,8 +17,9 @@
 .header {
     grid-area: 1/2/2/3;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 130px;
+    justify-items: left;
     padding: 20px;
     
 }
@@ -33,11 +34,12 @@ ul {
 
 .dash {
     color: white;
-    width: 70px;
+    width: 75px;
 }
 
 .icon {
-    width: 40px;
+    width: 30px;
+    justify-self: center;
 }
 
 .DashLogo {
@@ -49,17 +51,19 @@ ul {
 
 .navagation {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: repeat(6, 60px);
     justify-items: left;
+    align-items: center;
 
 }
 
 .optioons {
     display: grid;
-    grid-template-columns: 60px 1fr;
+    grid-template-columns: 80px 1fr;
     grid-template-rows: repeat(3, 60px);
     justify-items: left;
+    align-items: center;
 
 }
 
@@ -68,12 +72,22 @@ ul {
 }
 
 
-.ring, .smalcat{
-    width: 40px;
+.ring{
+    width: 30px;
+}
+
+.smalcat{
+    width: 60px;
 }
 
 .largecat{
     width: 60px;
+}
+
+.mainsearch{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
 }
 
 .search input{
@@ -86,5 +100,56 @@ ul {
 .search{
     display: grid;
     grid-template-columns: 50px 1fr;
+    align-items: center;
 }
 
+.sidecontent{
+    display: grid;
+    grid-template-columns: repeat(2,70px) 200px;
+    align-items: center;
+    justify-content: flex-end;
+    justify-items: center;
+}
+
+.sidecontent p{
+    font-size: 25px;
+    margin: 0;
+    
+}
+
+.sidecontentleft{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+
+.left{
+    display: grid;
+    grid-template-columns: 130px 500px;
+    align-items: center;
+   
+}
+
+.sidecontentleft p{
+    margin: 0;
+}
+
+.largecat{
+    width: 120px;
+}
+
+.largeText{
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.buttonsgrid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.buttonsgrid button{
+    width: 90px;
+    height: 50px;
+    border-radius: 10px;
+}
